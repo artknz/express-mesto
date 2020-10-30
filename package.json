@@ -1,12 +1,13 @@
 {
   "name": "express-mesto",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "project mesto on express",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "lint": "eslint  **/*.js"
   },
   "keywords": [],
   "author": "Artyom Knyazev",
