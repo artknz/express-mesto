@@ -5,10 +5,3 @@
     "no-console": "off"
   }
 }
-
-    // ["error", { "allow": ["_id"] }],
-
-    // "allow": ["_id"]
-
-    // "no-underscore-dangle": ["error", { "allow": ["foo_", "_bar"] }]
-

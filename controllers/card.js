@@ -16,7 +16,12 @@ const createCard = (req, res) => {
 
 const deleteCard = (req, res) => {
   Card.findByIdAndRemove(req.params.cardId)
-    .then((card) => res.status(200).send(card))
+    .then((card) => {
+      if (!card) {
+        res.status(404).send({ message: 'нет пользователя с таким id' });
+      }
+      res.status(200).send(card);
+    })
     .catch((err) => {
       if (err.name === 'CastError') {
         res.status(400).send({ message: 'некорректные данные' });
